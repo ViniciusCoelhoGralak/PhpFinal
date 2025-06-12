@@ -19,3 +19,12 @@ CREATE TABLE `veiculos` (
   FOREIGN KEY (`usuario_id`) REFERENCES `usuarios`(`id`)
 );
 
+-- INSERINDO O USUÁRIO DE TESTE
+INSERT INTO `usuarios` (`login`, `senha`, `email`) VALUES
+('teste', '$2y$10$b7dh5PPPYYGdJf//Xk35WugIpJSDRUOwCGvEXFBnxyt1Wj1SJKRfe', 'teste@teste.com');
+
+-- senha de teste "123456"
+
+
+INSERT INTO `veiculos` (`usuario_id`, `placa`, `modelo`) VALUES
+((SELECT id FROM usuarios WHERE login = 'teste'), 'TEST-000', 'Veiculo de Teste');
