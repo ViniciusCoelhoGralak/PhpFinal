@@ -3,12 +3,14 @@
 PROJETO FINAL DE PHP - SISTEMA DE GERENCIAMENTO DE VEÍCULOS
 =====================================================
 
-1. TEMA ESCOLHIDO
 -----------------
+1. TEMA ESCOLHIDO
+
 O tema escolhido para este projeto é um **Sistema de Gerenciamento de Veículos**. Ele permite que usuários cadastrem, visualizem, editem e excluam veículos associados à sua conta.
 
-2. RESUMO DO FUNCIONAMENTO
 --------------------------
+2. RESUMO DO FUNCIONAMENTO
+
 Este é um sistema web básico desenvolvido em PHP com MySQL para gerenciar veículos.
 As principais funcionalidades são:
 -   **Cadastro de Usuário:** Novos usuários podem se registrar no sistema informando um login, e-mail e senha. O sistema verifica a unicidade do login e do e-mail.
@@ -23,8 +25,9 @@ As principais funcionalidades são:
 -   **Logout:** O usuário pode encerrar sua sessão a qualquer momento.
 -   **Estética:** O sistema utiliza Bootstrap para uma apresentação visual responsiva e agradável.
 
-3. USUÁRIO E SENHA DE TESTE
 ---------------------------
+3. USUÁRIO E SENHA DE TESTE
+
 Para facilitar a avaliação e teste do sistema, um usuário de teste foi pré-cadastrado no script de criação do banco de dados:
 
 -   **Login:** `teste`
@@ -33,8 +36,9 @@ Para facilitar a avaliação e teste do sistema, um usuário de teste foi pré-c
 
 Você pode utilizar estas credenciais para acessar a o dashboard após a instalação do banco de dados.
 
-4. PASSOS PARA INSTALAÇÃO E EXECUÇÃO DO BANCO DE DADOS
 ------------------------------------------------------
+4. PASSOS PARA INSTALAÇÃO E EXECUÇÃO DO BANCO DE DADOS
+
 Este sistema utiliza o banco de dados MySQL. Siga os passos abaixo para configurar o banco:
 
 **Pré-requisitos:**
@@ -59,8 +63,9 @@ c.  **Importe o Banco de Dados:**
 
 d.  **Verifique a Criação:** Após a execução bem-sucedida, o banco de dados `bd_veiculos` e as tabelas `usuarios` e `veiculos` serão criados, e o usuário de teste (`login: teste`, `senha: 123456`) será inserido.
 
-5. ACESSO AO SISTEMA
 --------------------
+5. ACESSO AO SISTEMA
+
 Após configurar o banco de dados, você pode acessar o sistema no seu navegador através do endereço:
 `http://localhost/SeuProjeto/index.php` (Substitua `SeuProjeto` pelo nome real da pasta do seu projeto em `htdocs`).
 
