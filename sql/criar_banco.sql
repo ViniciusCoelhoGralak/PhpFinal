@@ -27,4 +27,4 @@ INSERT INTO `usuarios` (`login`, `senha`, `email`) VALUES
 
 
 INSERT INTO `veiculos` (`usuario_id`, `placa`, `modelo`) VALUES
-((SELECT id FROM usuarios WHERE login = 'teste'), 'TEST-000', 'Veiculo de Teste');
+((SELECT id FROM usuarios WHERE login = 'teste'), 'AAA1234', 'Veiculo de Teste');

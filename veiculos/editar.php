@@ -84,7 +84,7 @@ mysqli_close($conn);
         <a href="../logout.php" class="btn btn-danger">Sair</a>
     </nav>
 
-    <?php verificar_codigo(); // Display messages for codes 6, 7, 10 ?>
+    <?php verificar_codigo();?>
 
     <?php if ($veiculo): ?>
         <form action="editar.php" method="post">
