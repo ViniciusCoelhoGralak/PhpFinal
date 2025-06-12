@@ -1,0 +1,21 @@
+DROP DATABASE IF EXISTS `bd_veiculos`;
+
+CREATE DATABASE IF NOT EXISTS `bd_veiculos` DEFAULT CHARACTER SET utf8mb4;
+USE `bd_veiculos`;
+
+CREATE TABLE `usuarios` (
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `login` VARCHAR(50) NOT NULL UNIQUE,
+  `senha` VARCHAR(255) NOT NULL,
+  `email` VARCHAR(100) NOT NULL UNIQUE
+);
+
+CREATE TABLE `veiculos` (
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `usuario_id` INT NOT NULL,
+  `placa` VARCHAR(50) NOT NULL,
+  `modelo` VARCHAR(100) NOT NULL,  
+  `data_criacao` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (`usuario_id`) REFERENCES `usuarios`(`id`)
+);
+
