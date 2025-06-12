@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial - Gerenciamento de Veículos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="css/estilo.css" rel="stylesheet">
 </head>
 
 <body class="container py-5"> 
@@ -15,7 +16,7 @@
 
             <a href="login.php" class="btn btn-primary me-2">Fazer Login</a> 
             <a href="cadastro.php" class="btn btn-secondary">Cadastre-se</a> 
-            
+
         </nav>
 
     <div class="alert alert-info text-center" role="alert"> 

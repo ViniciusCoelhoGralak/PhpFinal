@@ -1,0 +1,132 @@
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Um cinza claro para o fundo */
+    color: #343a40; /* Cor de texto padrão */
+}
+
+/* Estilo para o cabeçalho principal (Meus Veículos) */
+h1 {
+    color: #0056b3; /* Um azul mais escuro */
+    border-bottom: 2px solid #007bff; /* Linha azul de destaque */
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-align: center; /* Centraliza o título */
+}
+
+/* Estilo para a barra de navegação superior */
+nav {
+    background-color: #e9ecef; /* Um cinza um pouco mais escuro para o nav */
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end; /* Alinha o conteúdo à direita */
+    align-items: center;
+}
+
+/* Estilo para o botão de sair na nav */
+nav .btn-danger {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+}
+
+/* Estilo para o cabeçalho de boas-vindas */
+h2 {
+    color: #28a745; /* Verde para a mensagem de boas-vindas */
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 10px;
+    background-color: #e2ffe8; /* Fundo verde claro */
+    border-radius: 5px;
+}
+
+/* Estilo para os subtítulos (Cadastrar Novo Veículo, Lista de Veículos) */
+h3 {
+    color: #007bff; /* Azul primário */
+    margin-top: 40px; /* Mais espaço acima */
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dee2e6; /* Linha fina abaixo */
+    padding-bottom: 8px;
+}
+
+/* Estilo para o formulário de cadastro de veículo */
+form.mb-5 { /* Seleciona o formulário de cadastro de veículo */
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+    margin-bottom: 40px !important; /* Mais margem inferior */
+}
+
+/* Ajuste para o layout dos campos do formulário */
+form .row.g-3 {
+    align-items: flex-end; /* Alinha os itens do form pela base */
+}
+
+form .form-label {
+    font-weight: bold;
+    color: #495057;
+}
+
+/* Estilo para a tabela de veículos */
+.table {
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08); /* Sombra para a tabela */
+}
+
+.table thead th {
+    background-color: #007bff; /* Fundo azul para o cabeçalho da tabela */
+    color: white;
+    border-color: #007bff;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fundo mais escuro para linhas pares da tabela */
+}
+
+.table tbody tr:hover {
+    background-color: #e9ecef; /* Efeito hover na tabela */
+}
+
+/* Estilo para os botões de ação na tabela */
+.table .btn-sm {
+    padding: 4px 10px;
+    font-size: 0.8rem;
+}
+
+/* Mensagens de erro/sucesso da função verificar_codigo */
+h3.text-danger, h3.text-warning, h3.text-success {
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: normal;
+    text-align: center; /* Centraliza as mensagens */
+}
+
+h3.text-danger {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+h3.text-warning {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    color: #856404;
+}
+
+h3.text-success {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+/* Ajuste para a mensagem "Nenhum veículo cadastrado ainda!" */
+p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #6c757d; /* Um cinza mais suave */
+}

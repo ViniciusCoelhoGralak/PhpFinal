@@ -4,6 +4,7 @@ function form_nao_enviado() {
     return $_SERVER['REQUEST_METHOD'] !== 'POST';
 }
 
+// so funciona se tentarem burlar o required dos forms
 function campos_em_branco() {
     return empty($_POST['login']) || empty($_POST['senha']);
 }
@@ -27,6 +28,7 @@ function usuario_ou_email_ja_existe($login, $email, $conn) {
     return $count > 0;
 }
 
+// so funciona se tentarem burlar o required dos forms
 function veiculo_campos_em_branco($modelo, $placa) {
     return empty($modelo) || empty($placa);
 }

@@ -11,17 +11,18 @@ require_once 'includes/funcoes.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus Veículos - Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="css/estilo.css" rel="stylesheet">
 </head>
 
 <body class="container"> 
 
-    <h1 class="my-4">Meus Veículos</h1>
+    <h1 class="my-4">Meus Veículos</h1> 
+
+    <h2 class="mb-3">Bem-vindo, <?= htmlspecialchars($_SESSION['login']) ?>!</h2>
 
     <nav class="mb-4">  
         <a href="logout.php" class="btn btn-danger">Sair</a> 
     </nav>
-
-    <h2 class="mb-3">Bem-vindo, <?= htmlspecialchars($_SESSION['login']) ?>!</h2>
 
     <?php verificar_codigo(); ?>
 
@@ -55,7 +56,7 @@ require_once 'includes/funcoes.php';
     if (!$stmt) {
 
         echo "<p class='text-danger'>Erro ao preparar consulta: " . mysqli_error($conn) . "</p>";
-        
+
     } else {
 
         mysqli_stmt_bind_param($stmt, "i", $id_usuario);

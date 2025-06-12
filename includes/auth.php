@@ -4,7 +4,7 @@
 
 session_start();
 if (!isset($_SESSION['id'])) {
-    header('location:../login.php?codigo=0');
+    header('location:login.php?codigo=0');
     exit;
 }
 
