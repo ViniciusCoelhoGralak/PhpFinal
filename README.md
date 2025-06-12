@@ -1,5 +1,5 @@
 # PROJETO FINAL DE PHP
-=====================================================
+
 PROJETO FINAL DE PHP - SISTEMA DE GERENCIAMENTO DE VEÍCULOS
 =====================================================
 
